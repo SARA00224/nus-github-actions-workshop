@@ -9,7 +9,6 @@
 </head>
 <body>
     <header>
-        <a href="info.html" class="resources-link">Resources</a>
         <h1>Octocat Commit Catcher</h1>
         <p class="subtitle">A GitHub Actions workshop at NUS</p>
     </header>
@@ -33,6 +32,13 @@
                 <ol id="high-scores"></ol>
                 <p class="muted" id="no-scores">No scores yet. Play a round!</p>
             </div>
+
+            <div class="panel links-panel">
+                <a href="https://github.com/Kile/nus-github-actions-workshop" class="sidebar-link" target="_blank">
+                    Source code <span class="star-badge" id="star-count"></span>
+                </a>
+                <a href="info.html" class="sidebar-link">Resources</a>
+            </div>
         </aside>
     </main>
 
@@ -40,6 +46,17 @@
         <p>Built for <img src="img/campus-expert-logo.png" alt="GitHub Campus Expert" class="footer-flag"> <strong>GitHub Education</strong> workshops</p>
     </footer>
 
+    <script>
+    fetch("https://api.github.com/repos/Kile/nus-github-actions-workshop")
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+            if (d.stargazers_count !== undefined) {
+                var el = document.getElementById("star-count");
+                el.textContent = "\u2605 " + d.stargazers_count;
+            }
+        })
+        .catch(function () {});
+    </script>
     <script src="config.js"></script>
     <script src="logic.js"></script>
     <script src="game.js"></script>

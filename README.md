@@ -14,7 +14,7 @@ Catch commits, dodge bugs, climb the high score board.
 &nbsp;&nbsp;
 <a href="https://gh.io/githubactions2026"><img src="https://custom-icon-badges.demolab.com/badge/Student_Developer_Pack-black?logo=github" alt="Student Developer Pack"></a>
 &nbsp;&nbsp;
-<a href="https://docs.github.com/en/education/about-github-education/use-github-at-your-educational-institution/applying-to-be-a-github-campus-expert"><img src="https://custom-icon-badges.demolab.com/badge/Campus_Experts-black?logo=GitHub-campus-expert-flag" alt="Campus Experts"></a>
+<a href="https://docs.github.com/en/education/about-github-education/use-github-at-your-educational-institution/applying-to-be-a-github-campus-expert"><img src="https://custom-icon-badges.demolab.com/badge/Become_a_Campus_Expert-black?logo=GitHub-campus-expert-flag" alt="Become a Campus Expert"></a>
 
 </div>
 
