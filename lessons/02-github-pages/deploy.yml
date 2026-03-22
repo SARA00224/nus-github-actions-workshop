@@ -7,7 +7,7 @@ on:
   workflow_run:
     workflows: ["Frontend Tests"]
     types: [completed]
-    branches: [main]
+    branches: [main, starter]
 
 permissions:
   contents: read
