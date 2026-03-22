@@ -7,7 +7,7 @@ on:
   workflow_run:
     workflows: ["Frontend Tests", "Backend Tests"]
     types: [completed]
-    branches: [main]
+    branches: [main, starter]
 
 jobs:
   check:

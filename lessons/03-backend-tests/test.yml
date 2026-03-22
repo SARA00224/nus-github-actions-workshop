@@ -1,13 +1,13 @@
-# Runs the backend (Python) tests on every push to main
-# and on every pull request targeting main.
+# Runs the backend (Python) tests on every push to main or starter
+# and on every pull request targeting main or starter.
 
 name: Backend Tests
 
 on:
   push:
-    branches: [main]
+    branches: [main, starter]
   pull_request:
-    branches: [main]
+    branches: [main, starter]
 
 jobs:
   test-backend:
