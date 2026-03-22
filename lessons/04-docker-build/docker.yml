@@ -31,7 +31,7 @@ jobs:
             COUNT=$(gh run list \
               --repo "${{ github.repository }}" \
               --workflow "$WORKFLOW" \
-              --branch main \
+              --branch starter \
               --json headSha,conclusion \
               --jq "[.[] | select(.headSha == \"$SHA\" and .conclusion == \"success\")] | length")
             if [ "$COUNT" -eq 0 ]; then
